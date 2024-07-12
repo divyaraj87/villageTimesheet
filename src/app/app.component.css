@@ -1,0 +1,21 @@
+.header {
+    background-color: #0a3854;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .header span {
+    color: white;
+    font-size: 8px;
+  }
+  .kElement {
+    border: 1px solid red;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .header div span {
+    color: red;
+    font-size: 28px;
+  }

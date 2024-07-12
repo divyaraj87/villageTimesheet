@@ -1,0 +1,29 @@
+<div class="date-navigation">
+  <button mat-icon-button (click)="previousDate()">
+    Prev
+  </button>
+  <button mat-icon-button (click)="nextDate()">
+    Next
+  </button>
+</div>
+<div *ngIf="isLoading">Loading...</div>
+<div class="job-list">
+  <mat-list *ngIf="!isLoading">
+    <mat-list-item *ngFor="let job of jobs" class="job-item">
+      <div class="job-date">
+        <span class="day">{{ job.startTime | date: 'EEE dd' }}</span><br/>
+        <span class="month">{{ job.startTime | date: 'MMM yy' }}</span>
+      </div>
+      <div class="job-details">
+        <div class="job-time">
+          <span class="time">{{ job.startTime | date: 'HH:mm' }}</span>
+          <span class="duration">- {{ job.startTime | totalTime: job.endTime }}</span>
+        </div>
+        <div class="job-description">
+          {{ job.jobId }} - {{ job.job.jobDescription }}
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>
+<button mat-fab color="primary" (click)="add()">Add New Entry +</button>

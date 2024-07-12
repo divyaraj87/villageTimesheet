@@ -1,0 +1,97 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.date-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.mdc-list-item {
+  margin-bottom: 10px;
+}
+.job-date {
+  width: 30%;
+  float: left;
+  height: 50px;
+  font-size: 12px;
+  background-color: #ccc;
+}
+.job-details {
+  width: 70%;
+  float: right;
+  height: 50px;
+  font-size: 12px;
+  background-color: #f1eded;
+}
+.add-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #0a3854;
+}
+.date-navigation {
+  justify-content: space-around;
+}
+.day, .month {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.job-time, .job-description {
+  padding-left: 5px;
+}
+.mat-mdc-fab {
+  width: 100%;
+  background-color: #0a3854 !important;
+  color: #fff !important;
+}
+.job-list .mat-list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.job-list .mat-list-item .job-date {
+  width: 80px;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.job-list .mat-list-item .job-date .day {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.job-list .mat-list-item .job-date .month {
+  display: block;
+  color: #757575;
+}
+
+.job-list .mat-list-item .job-details {
+  flex: 1;
+}
+
+.job-list .mat-list-item .job-details .job-time {
+  display: flex;
+  align-items: baseline;
+}
+
+.job-list .mat-list-item .job-details .job-time .time {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.job-list .mat-list-item .job-details .job-time .duration {
+  color: #757575;
+}
+
+.job-list .mat-list-item .job-details .job-description {
+  margin-top: 5px;
+  color: #424242;
+}
